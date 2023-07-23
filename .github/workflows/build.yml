@@ -23,11 +23,9 @@ jobs:
         name: stairspeedtest_reborn_linux32
         path: stairspeedtest/
     - name: Package Release
-      if: startsWith(github.ref, 'refs/tags/')
       run: tar czf stairspeedtest_reborn_linux32.tar.gz stairspeedtest
     - name: Draft Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: stairspeedtest_reborn_linux32.tar.gz
         draft: true
@@ -49,11 +47,9 @@ jobs:
         name: stairspeedtest_reborn_linux64
         path: stairspeedtest/
     - name: Package Release
-      if: startsWith(github.ref, 'refs/tags/')
       run: tar czf stairspeedtest_reborn_linux64.tar.gz stairspeedtest
     - name: Draft Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: stairspeedtest_reborn_linux64.tar.gz
         draft: true
@@ -77,11 +73,9 @@ jobs:
         name: stairspeedtest_reborn_darwin64
         path: stairspeedtest/
     - name: Package Release
-      if: startsWith(github.ref, 'refs/tags/')
       run: tar czf stairspeedtest_reborn_darwin64.tar.gz stairspeedtest
     - name: Draft Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: stairspeedtest_reborn_darwin64.tar.gz
         draft: true
@@ -135,11 +129,9 @@ jobs:
         name: stairspeedtest_reborn_win64
         path: stairspeedtest/
     - name: Package Release
-      if: startsWith(github.ref, 'refs/tags/')
       run: tar czf stairspeedtest_reborn_win64.tar.gz stairspeedtest
     - name: Draft Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: stairspeedtest_reborn_win64.tar.gz
         draft: true
@@ -194,11 +186,9 @@ jobs:
         name: stairspeedtest_reborn_win32
         path: stairspeedtest/
     - name: Package Release
-      if: startsWith(github.ref, 'refs/tags/')
       run: tar czf stairspeedtest_reborn_win32.tar.gz stairspeedtest
     - name: Draft Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: stairspeedtest_reborn_win32.tar.gz
         draft: true
